@@ -62,14 +62,7 @@ for you to work on. However, the images must be 4MP or larger, if they are small
 Create a variable that holds a generated random integer between 1 and 8 (inclusive). Use this variable to
 simulate the uploaded image size and print it. Then create an if statement that prints out “Thank you” if the
 size is equal to or greater than the limit. Otherwise, print out "The image is too small"
-
-part 7
-Expand part 6 to exclude if the image size is larger or equal to 6MP, then print out “Image is too large”.
-*/
-
-
-
-printOut("Replace this with you answer!");
+ */
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
