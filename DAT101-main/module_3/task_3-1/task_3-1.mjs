@@ -52,7 +52,6 @@ printOut('There is more soda ! :)')
   printOut('There i s no more soda . :(')
 }
 
-printOut("Replace this with you answer!");
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
@@ -74,6 +73,7 @@ if (imageSize >= 4){
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
+//part 7 Expand part 6 to exclude if the image size is larger or equal to 6MP, then print out “Image is too large”.
 /* Put your code below here!*/
 
 imageSize = Math.floor(Math.random() * 8) + 1;
@@ -98,26 +98,84 @@ const monthList =["January", "February", "Mars", "April", "Mai",
 const noOfMonth = monthList.length;
 const monthName = monthList[Math.floor(Math.random() * noOfMonth)];
 Print if monthName contains “r”: “You must take vitamin D” else “You do not need to take vitamin D”
-
-part 9
-Expand exercise 8 to print how many days there are in the current month. And do not use date object.
 */
+
+
 
 const monthList =["January", "February", "Mars", "April", "Mai",
   "Jun", "Juli", "August", "September", "October", "November", "December"];
   const noOfMonth = monthList.length;
   const monthName = monthList[Math.floor(Math.random() * noOfMonth)];
+  printOut("The month is: " + monthName); 
+  if (monthName.includes("r")){
+    printOut("You must take vitamin D");
+  } else {
+    printOut("You do not need to take vitamin D");
+  }
+  let daysInMonth;
+  switch (monthName) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+      daysInMonth = 31;
+      break;
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+      daysInMonth = 30;
+      break;
+    case "February":
+      daysInMonth = 28; // Vis det ikke er skuddår
+      break;
+  }
+  printOut("The month " + monthName + " has " + daysInMonth + " days.");
 
-  
-
-
-
-printOut("Replace this with you answer!");
 printOut(newLine);
 
 printOut("--- Part 9 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+/* Put your code below here!
+part 9
+Expand exercise 8 to print how many days there are in the current month. And do not use date object.
+*/
+
+const monthList2 =["January", "February", "Mars", "April", "Mai",
+  "Jun", "Juli", "August", "September", "October", "November", "December"];
+  const noOfMonth2 = monthList2.length;
+  const monthName2 = monthList2[Math.floor(Math.random() * noOfMonth2)];
+  printOut("The month is: " + monthName2); 
+  if (monthName2.includes("r")){
+    printOut("You must take vitamin D");
+  } else {
+    printOut("You do not need to take vitamin D");
+  }
+  let daysInMonth2;
+  switch (monthName2) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+      daysInMonth2 = 31;
+      break;
+    case "April":
+    case "June":
+    case "September":
+    case "November":
+      daysInMonth2 = 30;
+      break;
+    case "February":
+      daysInMonth2 = 28; // Igjen, vis det ikke er skuddår
+      break;
+  }
+  printOut("The month " + monthName2 + " has " + daysInMonth2 + " days.");
+
 printOut(newLine);
 
 printOut("--- Part 10 ---------------------------------------------------------------------------------------------");
@@ -127,7 +185,46 @@ March through May, but in April you have temporary premises in the building next
 constant in exercise 8 to inform the status of your gallery in that month.
 */
 
-
-
-printOut("Replace this with you answer!");
+const monthList3 =["January", "February", "Mars", "April", "Mai",
+  "Jun", "Juli", "August", "September", "October", "November", "December"];
+  const noOfMonth3 = monthList3.length;
+  const monthName3 = monthList3[Math.floor(Math.random() * noOfMonth3)];
+  printOut("The month is: " + monthName3); 
+  if (monthName3.includes("r")){
+    printOut("You must take vitamin D");
+  } else {
+    printOut("You do not need to take vitamin D");
+  }
+  let daysInMonth3;
+  switch (monthName3) {
+    case "January":
+    case "March":
+    case "May":
+    case "July":
+    case "August":
+    case "October":
+    case "December":
+      daysInMonth3 = 31;
+      break;
+    case "April":
+      daysInMonth3 = 30; // Temporarily in the building next door
+      break;
+    case "June":
+    case "September":
+    case "November":
+      daysInMonth3 = 30;
+      break;
+    case "February":
+      daysInMonth3 = 28; // Igjen, vis det ikke er skuddår
+      break;
+  }
+  printOut("The month " + monthName3 + " has " + daysInMonth3 + " days.");
+  if (monthName3 === "March" || monthName3 === "May"){
+    printOut("The gallery is closed for refurbishment.");
+  } else if (monthName3 === "April"){
+    printOut("The gallery is temporarily in the building next door.");
+  } else {
+    printOut("The gallery is open.");
+  }
+  
 printOut(newLine);

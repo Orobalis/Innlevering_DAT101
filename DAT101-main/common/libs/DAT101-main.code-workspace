@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../Pushed kode fra lærer/DAT101-main latest push"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5500,
+		"liveServer.settings.multiRootWorkspaceName": "DAT101-main"
+	}
+}
