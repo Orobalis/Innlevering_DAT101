@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../DAT101-main-Pusched"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DAT101-main"
+	}
+}

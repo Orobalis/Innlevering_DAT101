@@ -63,11 +63,31 @@ Create a variable that holds a generated random integer between 1 and 8 (inclusi
 simulate the uploaded image size and print it. Then create an if statement that prints out “Thank you” if the
 size is equal to or greater than the limit. Otherwise, print out "The image is too small"
  */
+
+let imageSize = Math.floor(Math.random() * 8) + 1;
+printOut("The image size is: " + imageSize.toString() + " MP");
+if (imageSize >= 4){
+  printOut("Thank you for the image");
+} else {
+  printOut("The image is too small");
+}
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+imageSize = Math.floor(Math.random() * 8) + 1;
+printOut("The image size is: " + imageSize.toString() + " MP");
+if (imageSize >= 4 && imageSize < 6){
+  printOut("Thank you for the image");
+}
+else if (imageSize >= 6){
+  printOut("Image is too large");
+}
+else {
+  printOut("The image is too small");
+}
+
 printOut(newLine);
 
 printOut("--- Part 8 ----------------------------------------------------------------------------------------------");
